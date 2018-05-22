@@ -1,0 +1,105 @@
+/* TODO: Implement solution here */
+
+.panel.left {
+	background:#565656;
+	position:relative;
+	top:0;
+	bottom:0;
+	float: left;
+	text-align: center;
+	font-size:12px;
+	width: 20%;
+	height: 100%;
+	display: table-cell;
+}
+
+/* Logo Top */
+#logoContainer{
+	display:block;
+	vertical-align: top;
+	position: relative;
+	top:25px;
+}
+#logoContainerImg{
+	border-radius: 50%;
+	border: 2px solid white;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	display: block;
+    vertical-align: top;
+    background-image: url("../images/wine.png");
+    background-size: 75% 75%;
+    background-position:center;
+    background-repeat:no-repeat;  
+}
+#logoText {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+#logoTitleWine{
+	font-weight: bold;
+	color: white;
+}
+.line{
+	width: 100%;
+	border-bottom: 1px solid #4C4C4C;
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+/* Search, sort filter */ 
+.labelTitle{
+	font-size: 12px;
+	float:left;
+	font-weight: bold;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+#searchContainer{
+	display: inline;
+	position: relative;
+	background-color: red;
+}
+input[type="text"] {
+	float:left;
+    width: 80%;
+    margin-left: 25px;
+	border-radius: 5px;
+	height: 20px;
+}
+#sortByContainer {
+	display: inline;
+	position: relative;
+	margin-top: 25px;
+}
+select{
+	float:left;
+    width: 80%;
+    margin-left: 25px;
+}
+#categoryPicker{
+	display: inline;
+	position: relative;
+}
+#categoryTitle{
+    margin-left: 25px;
+}
+ul#categoryList > li{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	float: left;
+	clear: left;
+    width: 80%;
+    padding-left: 10px;
+    text-align: left;
+    cursor: pointer;
+    margin-left: 15px;
+}
+ul#categoryList > li.active{
+	background-color: #0189A8;
+	border-radius: 5px;
+}

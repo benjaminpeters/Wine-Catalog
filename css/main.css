@@ -1,0 +1,39 @@
+html {
+    /*overflow: hidden;*/
+    font-family: Arial;
+    font-size: 12px;
+    color: #b4b4b4;
+}
+body{
+	background-color: #2F2F2F;
+}
+
+html, body {
+	height: 100%;
+}
+
+#container{
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	display: table;
+}
+/* Global useful classes */
+
+.shadow {
+	-webkit-box-shadow: 2px 4px 12px 1px rgba(0,0,0,1);
+	-moz-box-shadow: 2px 4px 12px 1px rgba(0,0,0,1);
+	box-shadow: 2px 4px 12px 1px rgba(0,0,0,1);
+}
+
+.upperCase {
+	text-transform: uppercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+.lowerCase {
+	text-transform: lowercase;
+}

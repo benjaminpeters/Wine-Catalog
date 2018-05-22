@@ -1,0 +1,161 @@
+/* TODO: Implement solution here */
+
+.panel.center {
+}
+
+/* Wine List Container */
+#windListContainer{
+	height: 900px;
+	overflow-y: auto;
+}
+
+.flex-container {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	-ms-box-orient: horizontal;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wrap    { 
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}  
+
+/* Wine List Card */
+/* Container */
+.cardContainer {
+	height: 325px;
+	width: 200px;
+	margin: 25px 25px;
+	background-color: white;
+	opacity: 0.8;
+	position: relative;
+	-webkit-box-shadow: 2px 4px 12px 1px rgba(0,0,0,1);
+	-moz-box-shadow: 2px 4px 12px 1px rgba(0,0,0,1);
+	box-shadow: 2px 4px 12px 1px rgba(0,0,0,1);
+}
+
+/* Image */
+.cardImage{
+	width: 150px;
+	display: block;
+	margin: 25px auto;
+}
+.grow .cardImage{ 
+	transition: all .2s ease-in-out;
+}
+.grow:hover .cardImage{
+ 	transform: scale(1.1);
+ }
+
+ .grow:hover{
+ 	opacity: 1;
+ }
+
+ /* Add item */
+.cardAddItem{
+	font-size: 20px;
+ 	padding-top: 10px;
+ 	padding-left: 10px;
+ 	cursor: pointer;
+ 	float: left;
+ 	z-index: 1;
+}
+
+ /* Price Label */
+ .cardPriceLabelDollar{
+ 	float: right;
+ 	font-size: 20px;
+ 	color: #2F2F2F;
+ 	padding-top: 10px;
+ 	padding-right: 3px;
+ 	padding-left: 20px;
+ 	z-index: 1;
+ 	position: relative;
+ }
+ .cardPriceLabelCent{
+ 	float: right;
+ 	font-size: 12px;
+ 	text-decoration: underline;
+ 	color: #2F2F2F;
+ 	padding-top: 10px;
+ 	padding-right: 10px;
+ 	z-index: 1;
+ 	position: relative;
+ }
+
+/* Card details */
+.cardDetails{
+	background: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 85px;
+	bottom: 0px;
+	position: absolute;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+ul#wineList > li.cardContainer.active .cardDetails{
+	height: 325px;
+}
+
+ul#wineList > li.cardContainer.active .cardAddItem{
+	display: none;
+}
+
+ul#wineList > li.cardContainer.active .cardPriceLabelDollar{
+	display: none;
+}
+
+ul#wineList > li.cardContainer.active .cardPriceLabelCent{
+	display: none;
+}
+
+ul#wineList > li.cardContainer.active .cardName{
+	color: white;
+}
+
+.activedetailSpacing{
+	margin: 20px 50px 20px 20px;
+}
+.caret{
+	float: right;
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.activeDetailInfo{
+	line-height:0;
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+ul#wineList > li.cardContainer.active .activeDetailInfo{
+	opacity: 1;
+	height: 100%;
+	line-height:100%;
+}
+
+.detailCardInfoFont{
+	font-weight: bold;
+	color: white;
+	padding-bottom: 10px;
+}
